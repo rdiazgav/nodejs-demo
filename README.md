@@ -5,7 +5,7 @@ Ensure you have access to an OpenShift cluster. If you don't have one, you can c
 
 # 2. Accessing OpenShift
 Step 1: Log in to the OpenShift Console (web UI) or use the oc command-line tool.
-If using the command line, run: oc login [CLUSTER_URL] -u [USERNAME] -p [PASSWORD]
+If using the command line, run: ```oc login [CLUSTER_URL] -u [USERNAME] -p [PASSWORD]```
 
 # 3. Creating a New Project
 Step 2: Create a new project for your demo.
@@ -24,10 +24,10 @@ Step 5: Choose a Node.js builder image and provide a Git repository with the Nod
 Step 6: Follow the prompts to configure and create the application.
 
 Alternatively, using the CLI:
-
+```
 $ oc new-app nodejs~[GIT_REPO_URL] --name=my-nodejs-app
 $ oc expose svc/my-nodejs-app
-
+```
 This will create a new Node.js application and expose it as a service.
 
 # 5. Monitoring the Deployment
@@ -40,16 +40,16 @@ Step 8: Once the build is complete, the application will be deployed automatical
 # 6. Accessing the Application
 Step 9: Find the external URL of the application.
 In the Console, go to “Routes” in the application’s overview page.
-Using CLI: oc get route my-nodejs-app -o jsonpath='{.spec.host}'
+Using CLI: ```oc get route my-nodejs-app -o jsonpath='{.spec.host}'```
 
-#7. Demonstrating Scaling Capabilities
+# 7. Demonstrating Scaling Capabilities
 Step 10: Show how easy it is to scale the application.
 In the Console, adjust the number of pods.
-Using CLI: oc scale --replicas=[NUMBER_OF_PODS] deployment/my-nodejs-app
+Using CLI: ```oc scale --replicas=[NUMBER_OF_PODS] deployment/my-nodejs-app```
 
 # 8. Cleanup (Optional)
 Step 11: Delete the project if this is a one-off demo.
-oc delete project demo-project
+```$ oc delete project demo-project```
 
 # Additional Tips
 Prepare a Sample Git Repository: Have a Git repository with a simple application ready. This makes the demo smoother.
