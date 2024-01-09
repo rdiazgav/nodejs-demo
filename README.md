@@ -24,10 +24,10 @@ Step 5: Choose a Node.js builder image and provide a Git repository with the Nod
 Step 6: Follow the prompts to configure and create the application.
 
 Alternatively, using the CLI:
-'''
-oc new-app nodejs~[GIT_REPO_URL] --name=my-nodejs-app
-oc expose svc/my-nodejs-app
-'''
+
+$ oc new-app nodejs~[GIT_REPO_URL] --name=my-nodejs-app
+$ oc expose svc/my-nodejs-app
+
 This will create a new Node.js application and expose it as a service.
 
 # 5. Monitoring the Deployment
