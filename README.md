@@ -16,15 +16,18 @@ Or, use the command: oc new-project demo-project
 You can deploy a simple application like a Node.js or Python web app. For this demo, let's use a Node.js app.
 
 Step 3: From the OpenShift Console, go to the Developer perspective.
-Step 4: Click on “+Add” and select “From Catalog.”
-Step 5: Choose a Node.js builder image and provide a Git repository with the Node.js source code. (You can use a sample app repository from GitHub).
-Step 6: Follow the prompts to configure and create the application.
-Alternatively, using the CLI:
 
-bash
-Copy code
+Step 4: Click on “+Add” and select “From Catalog.”
+
+Step 5: Choose a Node.js builder image and provide a Git repository with the Node.js source code. (You can use a sample app repository from GitHub).
+
+Step 6: Follow the prompts to configure and create the application.
+
+Alternatively, using the CLI:
+'''
 oc new-app nodejs~[GIT_REPO_URL] --name=my-nodejs-app
 oc expose svc/my-nodejs-app
+'''
 This will create a new Node.js application and expose it as a service.
 
 # 5. Monitoring the Deployment
