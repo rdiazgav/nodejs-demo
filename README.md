@@ -55,3 +55,4 @@ Step 11: Delete the project if this is a one-off demo.
 Prepare a Sample Git Repository: Have a Git repository with a simple application ready. This makes the demo smoother.
 Explain Each Step: As you go through the steps, explain what each command or action is doing and how it contributes to the ease of application deployment in OpenShift.
 Highlight OpenShift Features: Talk about features like automated builds, scaling, self-healing (auto-replacement of failed pods), and integrated monitoring and logging.
+Tweak the server.js code to print out whatever you want!
