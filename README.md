@@ -1,4 +1,3 @@
-Creating a demo to showcase OpenShift's capabilities, particularly focusing on easy application deployment, is a great way to illustrate the benefits to potential customers. Here's a step-by-step guide for a simple yet effective demo:
 
 # 1. Setting Up the Environment
 Ensure you have access to an OpenShift cluster. If you don't have one, you can create a trial account on Red Hat OpenShift Online.
